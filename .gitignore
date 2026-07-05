@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Model files
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# Large datasets (按需保留/删除这一行)
+*.npz
+
+# Training / output artifacts
+runs/
+outputs/
+checkpoints/
+logs/
+
+# OS
+.DS_Store
