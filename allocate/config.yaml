@@ -1,0 +1,24 @@
+# 敌机对我方飞机的威胁评分参数。
+threat:
+  weights:
+    distance: 0.40
+    speed: 0.30
+    angle: 0.30
+  distance_scale: 100000.0
+  closing_speed_scale: 500.0
+
+# 我方导弹攻击敌机的优势评分参数。
+attack:
+  weights:
+    distance: 0.40
+    speed: 0.30
+    angle: 0.30
+  distance_scale: 100000.0
+  closing_speed_scale: 1000.0
+
+# 综合分数 = attack * 攻击优势 + threat * 敌机威胁。
+composite:
+  attack: 0.60
+  threat: 0.40
+
+epsilon: 1.0e-9

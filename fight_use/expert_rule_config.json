@@ -1,0 +1,55 @@
+{
+  "system": {
+    "a_max": 8,
+    "f_max": 4,
+    "x_max": 6,
+    "y_max": 8,
+    "force_assignment": true
+  },
+  "strategy": {
+    "strategy_bias": 0.0,
+    "bias_strength": 0.7,
+    "emergency_defense_enabled": true,
+    "emergency_overrides_strategy": true
+  },
+  "threat": {
+    "protect_distance_scale": 150000.0,
+    "warning_time": 60.0,
+    "closing_speed_reference": 500.0,
+    "missile_distance_weight": 0.45,
+    "missile_time_weight": 0.25,
+    "missile_closing_weight": 0.20,
+    "missile_direction_weight": 0.10,
+    "emergency_threat": 0.80,
+    "emergency_time": 20.0
+  },
+  "geometry": {
+    "engagement_distance_scale": 150000.0,
+    "cpa_distance_scale": 15000.0,
+    "height_scale": 20000.0,
+    "max_cpa_time": 180.0,
+    "max_feasible_cpa_distance": 20000.0,
+    "min_forward_cosine": -0.20,
+    "time_margin_scale": 10.0
+  },
+  "attack": {
+    "angle_distance_weight": 0.76,
+    "closing_weight": 0.14,
+    "height_weight": 0.10,
+    "direction_weight": 0.55,
+    "distance_weight": 0.25,
+    "cpa_distance_weight": 0.20,
+    "minimum_threat_factor": 0.50
+  },
+  "defense": {
+    "threat_exponent": 1.20,
+    "cpa_distance_weight": 0.40,
+    "direction_weight": 0.35,
+    "closing_weight": 0.25
+  },
+  "fallback": {
+    "relax_geometry_when_unreachable": true,
+    "prefer_defense_when_scores_equal": true,
+    "score_epsilon": 0.000001
+  }
+}
